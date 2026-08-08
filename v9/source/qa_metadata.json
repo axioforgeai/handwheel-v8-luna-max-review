@@ -1,0 +1,215 @@
+{
+  "answer_choices": {
+    "handwheel_000480_s4420_v9_appendage_face_relation": [
+      "the long handgrip attaches at the rim along one spoke and projects from one face, while the short hub extension is centered and projects from the opposite face",
+      "both appendages attach at the central hub and project from the same face",
+      "the long handgrip is centered in the circular opening while the short hub extension attaches at the rim",
+      "both appendages lie flat in the wheel face and neither projects outward",
+      "the long handgrip attaches at the hub and the short hub extension attaches at the rim",
+      "the long handgrip and short hub extension project from the same face but at different distances from the center"
+    ],
+    "handwheel_000480_s4420_v9_repeat_breaker": [
+      "the central circular opening",
+      "the long handgrip",
+      "the short hub extension",
+      "the continuous outer rim",
+      "the five spoke bars as a group",
+      "no single feature breaks the repeated pattern"
+    ],
+    "handwheel_000480_s4420_v9_centered_vs_offset": [
+      "both appendages follow the opening's center and remain centered on it",
+      "the long handgrip follows the opening's center while the short hub extension is displaced toward the rim",
+      "the short hub extension follows the opening's center, while the long handgrip runs in the same front-to-back direction but is displaced toward the rim",
+      "the two appendages point in unrelated directions and neither can be compared with the opening",
+      "the short hub extension is offset toward the rim while the long handgrip follows the opening's center",
+      "both appendages are centered, but the opening is displaced toward the rim"
+    ],
+    "handwheel_000480_s4420_v9_grip_spoke_registration": [
+      "it sits halfway between two neighboring spokes",
+      "it is isolated at the center of an open sector",
+      "it touches the rim without sharing a spoke's direction",
+      "it continues the line of one spoke at the rim",
+      "it aligns with two spokes at once at the outer rim",
+      "it connects only to the central opening and not to the rim pattern"
+    ],
+    "handwheel_000480_s4420_v9_sector_boundary_pattern": [
+      "five closed pockets separated by round rods and interrupted by gaps in the rim",
+      "four open sectors separated by flat bars and enclosed by one continuous rim",
+      "one solid disk with no repeated openings or boundary bars",
+      "six open sectors separated by flat bars and enclosed by one continuous rim",
+      "five open sectors separated by flat bars and enclosed by one continuous rim",
+      "five open sectors separated by triangular plates with no continuous rim"
+    ],
+    "handwheel_000480_s4420_v9_opening_continuity": [
+      "it is a blind recess visible from only one end",
+      "it is two separate recesses that stop before meeting",
+      "there is no opening, the dark circle is only a surface marking",
+      "it is an opening whose two ends are disconnected",
+      "the circular feature is a shallow mark with no interior depth",
+      "it is one continuous opening that can be seen from both ends"
+    ],
+    "handwheel_000480_s4420_v9_end_to_end_depth_order": [
+      "short hub extension, wheel rim, long handgrip",
+      "long handgrip, wheel rim, short hub extension",
+      "wheel rim, short hub extension, long handgrip",
+      "short hub extension, long handgrip, wheel rim",
+      "wheel rim, long handgrip, short hub extension",
+      "long handgrip, short hub extension, wheel rim"
+    ],
+    "handwheel_000480_s4420_v9_one_spoke_shift": [
+      "every feature would coincide, including the long handgrip",
+      "the repeated wheel pattern would coincide but the long handgrip would move to a different sector",
+      "only the short hub extension would move while the wheel stayed fixed",
+      "the circular opening would disappear while all exterior features stayed fixed",
+      "the wheel repeats but the central hub does not",
+      "the wheel has no repeated spoke transformation"
+    ],
+    "handwheel_000480_s4420_v9_front_back_swap": [
+      "two neighboring spokes and the outer rim",
+      "the central opening and the outer rim",
+      "the long handgrip and the short hub extension",
+      "no features would exchange sides because the part is fully symmetric",
+      "the handgrip would exchange sides with a neighboring spoke",
+      "only the outer rim would exchange sides, both appendages would stay put"
+    ],
+    "handwheel_000480_s4420_v9_shared_depth_direction": [
+      "both are centered on the same line through the wheel",
+      "the opening extends front-to-back while the handgrip lies entirely in the wheel face",
+      "the handgrip and opening extend in perpendicular directions",
+      "both extend in the same front-to-back direction, but only the opening is centered and the handgrip is offset toward the rim",
+      "the opening and handgrip are perpendicular, but both are centered",
+      "the opening is offset toward the rim while the handgrip is centered"
+    ]
+  },
+  "answer_position_distribution": {
+    "A": 3,
+    "B": 3,
+    "C": 2,
+    "D": 2
+  },
+  "authoring_origin": {
+    "handwheel_000480_s4420_v9_appendage_face_relation": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_centered_vs_offset": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_end_to_end_depth_order": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_front_back_swap": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_grip_spoke_registration": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_one_spoke_shift": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_opening_continuity": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_repeat_breaker": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_sector_boundary_pattern": "deterministic_v9_relative_spatial",
+    "handwheel_000480_s4420_v9_shared_depth_direction": "deterministic_v9_relative_spatial"
+  },
+  "correct_choice_positions_one_based": {
+    "handwheel_000480_s4420_v9_appendage_face_relation": 1,
+    "handwheel_000480_s4420_v9_centered_vs_offset": 3,
+    "handwheel_000480_s4420_v9_end_to_end_depth_order": 3,
+    "handwheel_000480_s4420_v9_front_back_swap": 1,
+    "handwheel_000480_s4420_v9_grip_spoke_registration": 4,
+    "handwheel_000480_s4420_v9_one_spoke_shift": 4,
+    "handwheel_000480_s4420_v9_opening_continuity": 2,
+    "handwheel_000480_s4420_v9_repeat_breaker": 2,
+    "handwheel_000480_s4420_v9_sector_boundary_pattern": 1,
+    "handwheel_000480_s4420_v9_shared_depth_direction": 2
+  },
+  "difficulty_bands": {
+    "handwheel_000480_s4420_v9_appendage_face_relation": "V9",
+    "handwheel_000480_s4420_v9_centered_vs_offset": "V9",
+    "handwheel_000480_s4420_v9_end_to_end_depth_order": "V9",
+    "handwheel_000480_s4420_v9_front_back_swap": "V9",
+    "handwheel_000480_s4420_v9_grip_spoke_registration": "V9",
+    "handwheel_000480_s4420_v9_one_spoke_shift": "V9",
+    "handwheel_000480_s4420_v9_opening_continuity": "V9",
+    "handwheel_000480_s4420_v9_repeat_breaker": "V9",
+    "handwheel_000480_s4420_v9_sector_boundary_pattern": "V9",
+    "handwheel_000480_s4420_v9_shared_depth_direction": "V9"
+  },
+  "human_answerability": "Not guaranteed; this package intentionally tests failure when the decisive feature is hidden.",
+  "key_features": {
+    "appendage_face_relation": {
+      "decisive_feature": "long handgrip attachment at one spoke/rim region",
+      "occlusion_intent": "keep the handgrip behind the rim and spokes in every view; expose only a partial silhouette",
+      "question_focus": "relative attachment and opposite-face placement of the two appendages"
+    },
+    "centered_vs_offset": {
+      "decisive_feature": "relationship of both cylindrical appendages to the central opening",
+      "occlusion_intent": "avoid a full side-cylinder view; retain only narrow partial witnesses",
+      "question_focus": "centered hub extension versus rim-offset handgrip"
+    },
+    "end_to_end_depth_order": {
+      "decisive_feature": "overlapping appendage silhouettes",
+      "occlusion_intent": "keep both appendages close to the rim silhouette to make depth order ambiguous",
+      "question_focus": "near-to-far ordering of hub, rim, and handgrip"
+    },
+    "front_back_swap": {
+      "decisive_feature": "opposite placement of handgrip and hub extension",
+      "occlusion_intent": "use opposing oblique views without exposing either appendage end-on",
+      "question_focus": "which appendages exchange near/far sides under a flip"
+    },
+    "grip_spoke_registration": {
+      "decisive_feature": "grip/rim contact region",
+      "occlusion_intent": "place the contact region behind a rim edge in all four views",
+      "question_focus": "handgrip registration against the repeated spoke layout"
+    },
+    "one_spoke_shift": {
+      "decisive_feature": "handgrip location relative to repeated wheel geometry",
+      "occlusion_intent": "hide the grip in every view; the answer requires cross-view counterfactual reasoning",
+      "question_focus": "asymmetric feature after a one-spoke transformation"
+    },
+    "opening_continuity": {
+      "decisive_feature": "far-end witness of the central opening",
+      "occlusion_intent": "use edge-biased views that show only a partial dark opening",
+      "question_focus": "whether the central circular feature continues through the hub"
+    },
+    "repeat_breaker": {
+      "decisive_feature": "long handgrip",
+      "occlusion_intent": "hide the grip behind the near rim so repeat-breaking evidence is indirect",
+      "question_focus": "feature that breaks the repeated spoke transformation"
+    },
+    "sector_boundary_pattern": {
+      "decisive_feature": "sector count and bar/rim enclosure",
+      "occlusion_intent": "use grazing views so several openings collapse into narrow slivers",
+      "question_focus": "repeated wheel openings and their boundaries"
+    },
+    "shared_depth_direction": {
+      "decisive_feature": "central opening and partially hidden handgrip",
+      "occlusion_intent": "use signed-Y edge families so both direction witnesses are weak but nonzero",
+      "question_focus": "shared front-to-back direction versus centered/offset placement"
+    }
+  },
+  "model_stem": "handwheel_000480_s4420",
+  "occlusion_protocol": "Strict adversarial occlusion: the decisive feature is maximally hidden in all four question-owned views.",
+  "package": "vqa_v9_af",
+  "profile": "handwheel_visual_spatial_v9_af_triad_free_adversarial",
+  "question_count": 10,
+  "schema_version": "1.0.0",
+  "scope": "Final-B-Rep-derived categorical labels and image-only visual/spatial reasoning. No code, measurements, dimensions, or modeling history are released to an evaluator.",
+  "status": "candidate_pending_human_fairness_review",
+  "question_variant": "V9 triad-free relative-spatial stems with six labeled choices A-F and balanced correct-label schedule",
+  "ground_truth_answer_format": "A-F label followed by exact answer text",
+  "correct_choice_labels": {
+    "handwheel_000480_s4420_v9_appendage_face_relation": "A",
+    "handwheel_000480_s4420_v9_repeat_breaker": "B",
+    "handwheel_000480_s4420_v9_centered_vs_offset": "C",
+    "handwheel_000480_s4420_v9_grip_spoke_registration": "D",
+    "handwheel_000480_s4420_v9_sector_boundary_pattern": "E",
+    "handwheel_000480_s4420_v9_opening_continuity": "F",
+    "handwheel_000480_s4420_v9_end_to_end_depth_order": "A",
+    "handwheel_000480_s4420_v9_one_spoke_shift": "B",
+    "handwheel_000480_s4420_v9_front_back_swap": "C",
+    "handwheel_000480_s4420_v9_shared_depth_direction": "D"
+  },
+  "choice_count": 6,
+  "correct_label_schedule": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "coordinate_frame_visible": false
+}

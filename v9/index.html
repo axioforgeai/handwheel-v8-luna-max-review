@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handwheel V9 A–F Luna Max Review</title>
+<style>
+:root { color-scheme:dark; --bg:#0b1220; --panel:#111c2e; --line:#2b3d56; --text:#e7eef8; --muted:#a9b8cb; --good:#43d17b; --bad:#ff7373; --accent:#76b7ff; }
+* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+header { padding:32px max(20px,calc((100vw - 1180px)/2)); border-bottom:1px solid var(--line); background:#0e192b; }
+main { max-width:1180px; margin:0 auto; padding:24px 20px 56px; } h1 { margin:0 0 8px; font-size:clamp(24px,4vw,38px); } h2 { margin:0; font-size:20px; overflow-wrap:anywhere; } h3 { margin:0 0 6px; color:var(--muted); font-size:15px; text-transform:uppercase; letter-spacing:.06em; } p { margin:8px 0; } .subtitle,.note { color:var(--muted); max-width:930px; }
+.summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-top:22px; } .metric { padding:14px; border:1px solid var(--line); border-radius:10px; background:var(--panel); } .metric strong { display:block; font-size:24px; color:var(--accent); }
+.qa-card { margin:24px 0; padding:20px; border:1px solid var(--line); border-radius:14px; background:var(--panel); box-shadow:0 8px 26px #0002; } .qa-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; } .status { padding:4px 9px; border-radius:999px; font-weight:700; font-size:12px; letter-spacing:.05em; } .status.correct { color:#071b10; background:var(--good); } .status.incorrect { color:#260808; background:var(--bad); }
+.badges { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; } .badges span { padding:4px 9px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:13px; } details { margin:14px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); } summary { padding:10px 0; cursor:pointer; color:var(--accent); } .question { white-space:pre-wrap; margin:0 0 12px; color:#d7e5f5; font:14px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.answers { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin:16px 0; } .answer-box { padding:14px; border-radius:10px; border:1px solid var(--line); } .ground-truth { border-left:4px solid var(--good); } .vlm-answer { border-left:4px solid var(--accent); } .images-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; } .image-link { display:block; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:#070d17; } .image-link img { display:block; width:100%; aspect-ratio:1; object-fit:cover; transition:transform .18s ease; } .image-link:hover img { transform:scale(1.03); } footer { max-width:1180px; margin:0 auto; padding:0 20px 36px; color:var(--muted); font-size:13px; }
+#lightbox { display:none; position:fixed; inset:0; z-index:10; padding:5vh 5vw; background:#000d; align-items:center; justify-content:center; } #lightbox.open { display:flex; } #lightbox img { max-width:90vw; max-height:84vh; border:1px solid var(--line); border-radius:8px; } #lightbox button { position:fixed; top:18px; right:24px; border:0; background:#ffffff22; color:white; font-size:28px; width:42px; height:42px; border-radius:50%; cursor:pointer; } @media (max-width:700px) { .images-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .qa-heading { flex-direction:column; } }
+</style></head><body>
+<header><h1>Handwheel V9 A–F · Luna Max visual QA review</h1>
+<p class="subtitle">Triad-free adversarial image-only evaluation for <code>handwheel_000480_s4420</code>. Each item includes the labeled question, ground truth, Luna Max answer, decisive feature, occlusion intent, and four question-specific reference views.</p>
+<div class="summary"><div class="metric"><strong>10/10</strong>correct</div><div class="metric"><strong>100.0%</strong>accuracy</div><div class="metric"><strong>40/40</strong>weighted points</div><div class="metric"><strong>gpt-5.6-luna</strong>model</div><div class="metric"><strong>10 × 4</strong>questions / views</div></div>
+<p class="note">The evaluator received only each labeled question and its four triad-free images. Ground truth, CAD source, coordinate frame, and camera metadata were withheld.</p></header>
+<main><article class="qa-card" id="q01">
+      <div class="qa-heading"><h2>Q1: handwheel_000480_s4420_v9_appendage_face_relation</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>A</strong></span><span>VLM: <strong>A</strong></span></div>
+      <p><strong>Question focus:</strong> relative attachment and opposite-face placement of the two appendages</p>
+      <p><strong>Decisive feature:</strong> long handgrip attachment at one spoke/rim region</p>
+      <p><strong>Occlusion intent:</strong> keep the handgrip behind the rim and spokes in every view; expose only a partial silhouette</p>
+      <details open><summary>Question and choices</summary><pre class="question">Across the four oblique views, which relationship best explains where the long handgrip sits relative to the wheel and the shorter hub extension? Choose one:
+A. the long handgrip attaches at the rim along one spoke and projects from one face, while the short hub extension is centered and projects from the opposite face
+B. both appendages attach at the central hub and project from the same face
+C. the long handgrip is centered in the circular opening while the short hub extension attaches at the rim
+D. both appendages lie flat in the wheel face and neither projects outward
+E. the long handgrip attaches at the hub and the short hub extension attaches at the rim
+F. the long handgrip and short hub extension project from the same face but at different distances from the center</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>A.</strong> the long handgrip attaches at the rim along one spoke and projects from one face, while the short hub extension is centered and projects from the opposite face</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>A. the long handgrip attaches at the rim along one spoke and projects from one face, while the short hub extension is centered and projects from the opposite face</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q01_view01.png" data-caption="Q1 view 1"><img src="images/q01_view01.png" alt="Q1, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q01_view02.png" data-caption="Q1 view 2"><img src="images/q01_view02.png" alt="Q1, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q01_view03.png" data-caption="Q1 view 3"><img src="images/q01_view03.png" alt="Q1, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q01_view04.png" data-caption="Q1 view 4"><img src="images/q01_view04.png" alt="Q1, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q02">
+      <div class="qa-heading"><h2>Q2: handwheel_000480_s4420_v9_repeat_breaker</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>B</strong></span><span>VLM: <strong>B</strong></span></div>
+      <p><strong>Question focus:</strong> feature that breaks the repeated spoke transformation</p>
+      <p><strong>Decisive feature:</strong> long handgrip</p>
+      <p><strong>Occlusion intent:</strong> hide the grip behind the near rim so repeat-breaking evidence is indirect</p>
+      <details open><summary>Question and choices</summary><pre class="question">If the wheel were turned so each spoke takes the place of its neighbor, which visible feature would fail to return to a matching location? Choose one:
+A. the central circular opening
+B. the long handgrip
+C. the short hub extension
+D. the continuous outer rim
+E. the five spoke bars as a group
+F. no single feature breaks the repeated pattern</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>B.</strong> the long handgrip</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>B. the long handgrip</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q02_view01.png" data-caption="Q2 view 1"><img src="images/q02_view01.png" alt="Q2, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q02_view02.png" data-caption="Q2 view 2"><img src="images/q02_view02.png" alt="Q2, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q02_view03.png" data-caption="Q2 view 3"><img src="images/q02_view03.png" alt="Q2, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q02_view04.png" data-caption="Q2 view 4"><img src="images/q02_view04.png" alt="Q2, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q03">
+      <div class="qa-heading"><h2>Q3: handwheel_000480_s4420_v9_centered_vs_offset</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>C</strong></span><span>VLM: <strong>C</strong></span></div>
+      <p><strong>Question focus:</strong> centered hub extension versus rim-offset handgrip</p>
+      <p><strong>Decisive feature:</strong> relationship of both cylindrical appendages to the central opening</p>
+      <p><strong>Occlusion intent:</strong> avoid a full side-cylinder view; retain only narrow partial witnesses</p>
+      <details open><summary>Question and choices</summary><pre class="question">Comparing the central opening with the two cylindrical appendages, which relationship is visible in the oblique views? Choose one:
+A. both appendages follow the opening&#x27;s center and remain centered on it
+B. the long handgrip follows the opening&#x27;s center while the short hub extension is displaced toward the rim
+C. the short hub extension follows the opening&#x27;s center, while the long handgrip runs in the same front-to-back direction but is displaced toward the rim
+D. the two appendages point in unrelated directions and neither can be compared with the opening
+E. the short hub extension is offset toward the rim while the long handgrip follows the opening&#x27;s center
+F. both appendages are centered, but the opening is displaced toward the rim</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>C.</strong> the short hub extension follows the opening&#x27;s center, while the long handgrip runs in the same front-to-back direction but is displaced toward the rim</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>C. the short hub extension follows the opening&#x27;s center, while the long handgrip runs in the same front-to-back direction but is displaced toward the rim</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q03_view01.png" data-caption="Q3 view 1"><img src="images/q03_view01.png" alt="Q3, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q03_view02.png" data-caption="Q3 view 2"><img src="images/q03_view02.png" alt="Q3, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q03_view03.png" data-caption="Q3 view 3"><img src="images/q03_view03.png" alt="Q3, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q03_view04.png" data-caption="Q3 view 4"><img src="images/q03_view04.png" alt="Q3, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q04">
+      <div class="qa-heading"><h2>Q4: handwheel_000480_s4420_v9_grip_spoke_registration</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>D</strong></span><span>VLM: <strong>D</strong></span></div>
+      <p><strong>Question focus:</strong> handgrip registration against the repeated spoke layout</p>
+      <p><strong>Decisive feature:</strong> grip/rim contact region</p>
+      <p><strong>Occlusion intent:</strong> place the contact region behind a rim edge in all four views</p>
+      <details open><summary>Question and choices</summary><pre class="question">In the view where the rim pattern is easiest to compare, how is the long handgrip registered to the repeated spokes? Choose one:
+A. it sits halfway between two neighboring spokes
+B. it is isolated at the center of an open sector
+C. it touches the rim without sharing a spoke&#x27;s direction
+D. it continues the line of one spoke at the rim
+E. it aligns with two spokes at once at the outer rim
+F. it connects only to the central opening and not to the rim pattern</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>D.</strong> it continues the line of one spoke at the rim</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>D. it continues the line of one spoke at the rim</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q04_view01.png" data-caption="Q4 view 1"><img src="images/q04_view01.png" alt="Q4, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q04_view02.png" data-caption="Q4 view 2"><img src="images/q04_view02.png" alt="Q4, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q04_view03.png" data-caption="Q4 view 3"><img src="images/q04_view03.png" alt="Q4, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q04_view04.png" data-caption="Q4 view 4"><img src="images/q04_view04.png" alt="Q4, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q05">
+      <div class="qa-heading"><h2>Q5: handwheel_000480_s4420_v9_sector_boundary_pattern</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>E</strong></span><span>VLM: <strong>E</strong></span></div>
+      <p><strong>Question focus:</strong> repeated wheel openings and their boundaries</p>
+      <p><strong>Decisive feature:</strong> sector count and bar/rim enclosure</p>
+      <p><strong>Occlusion intent:</strong> use grazing views so several openings collapse into narrow slivers</p>
+      <details open><summary>Question and choices</summary><pre class="question">What arrangement of openings and boundaries is repeated around the wheel face? Choose one:
+A. five closed pockets separated by round rods and interrupted by gaps in the rim
+B. four open sectors separated by flat bars and enclosed by one continuous rim
+C. one solid disk with no repeated openings or boundary bars
+D. six open sectors separated by flat bars and enclosed by one continuous rim
+E. five open sectors separated by flat bars and enclosed by one continuous rim
+F. five open sectors separated by triangular plates with no continuous rim</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>E.</strong> five open sectors separated by flat bars and enclosed by one continuous rim</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>E. five open sectors separated by flat bars and enclosed by one continuous rim</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q05_view01.png" data-caption="Q5 view 1"><img src="images/q05_view01.png" alt="Q5, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q05_view02.png" data-caption="Q5 view 2"><img src="images/q05_view02.png" alt="Q5, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q05_view03.png" data-caption="Q5 view 3"><img src="images/q05_view03.png" alt="Q5, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q05_view04.png" data-caption="Q5 view 4"><img src="images/q05_view04.png" alt="Q5, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q06">
+      <div class="qa-heading"><h2>Q6: handwheel_000480_s4420_v9_opening_continuity</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>F</strong></span><span>VLM: <strong>F</strong></span></div>
+      <p><strong>Question focus:</strong> whether the central circular feature continues through the hub</p>
+      <p><strong>Decisive feature:</strong> far-end witness of the central opening</p>
+      <p><strong>Occlusion intent:</strong> use edge-biased views that show only a partial dark opening</p>
+      <details open><summary>Question and choices</summary><pre class="question">When the central hub is seen from opposite ends, what can be inferred about the circular opening? Choose one:
+A. it is a blind recess visible from only one end
+B. it is two separate recesses that stop before meeting
+C. there is no opening, the dark circle is only a surface marking
+D. it is an opening whose two ends are disconnected
+E. the circular feature is a shallow mark with no interior depth
+F. it is one continuous opening that can be seen from both ends</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>F.</strong> it is one continuous opening that can be seen from both ends</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>F. it is one continuous opening that can be seen from both ends</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q06_view01.png" data-caption="Q6 view 1"><img src="images/q06_view01.png" alt="Q6, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q06_view02.png" data-caption="Q6 view 2"><img src="images/q06_view02.png" alt="Q6, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q06_view03.png" data-caption="Q6 view 3"><img src="images/q06_view03.png" alt="Q6, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q06_view04.png" data-caption="Q6 view 4"><img src="images/q06_view04.png" alt="Q6, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q07">
+      <div class="qa-heading"><h2>Q7: handwheel_000480_s4420_v9_end_to_end_depth_order</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>A</strong></span><span>VLM: <strong>A</strong></span></div>
+      <p><strong>Question focus:</strong> near-to-far ordering of hub, rim, and handgrip</p>
+      <p><strong>Decisive feature:</strong> overlapping appendage silhouettes</p>
+      <p><strong>Occlusion intent:</strong> keep both appendages close to the rim silhouette to make depth order ambiguous</p>
+      <details open><summary>Question and choices</summary><pre class="question">Using the two opposing end-biased views, which near-to-far order remains consistent when looking from the hub-extension end? Choose one:
+A. short hub extension, wheel rim, long handgrip
+B. long handgrip, wheel rim, short hub extension
+C. wheel rim, short hub extension, long handgrip
+D. short hub extension, long handgrip, wheel rim
+E. wheel rim, long handgrip, short hub extension
+F. long handgrip, short hub extension, wheel rim</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>A.</strong> short hub extension, wheel rim, long handgrip</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>A. short hub extension, wheel rim, long handgrip</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q07_view01.png" data-caption="Q7 view 1"><img src="images/q07_view01.png" alt="Q7, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q07_view02.png" data-caption="Q7 view 2"><img src="images/q07_view02.png" alt="Q7, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q07_view03.png" data-caption="Q7 view 3"><img src="images/q07_view03.png" alt="Q7, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q07_view04.png" data-caption="Q7 view 4"><img src="images/q07_view04.png" alt="Q7, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q08">
+      <div class="qa-heading"><h2>Q8: handwheel_000480_s4420_v9_one_spoke_shift</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>B</strong></span><span>VLM: <strong>B</strong></span></div>
+      <p><strong>Question focus:</strong> asymmetric feature after a one-spoke transformation</p>
+      <p><strong>Decisive feature:</strong> handgrip location relative to repeated wheel geometry</p>
+      <p><strong>Occlusion intent:</strong> hide the grip in every view; the answer requires cross-view counterfactual reasoning</p>
+      <details open><summary>Question and choices</summary><pre class="question">After a one-spoke rotational shift of the wheel, which feature would no longer coincide with its prior location? Choose one:
+A. every feature would coincide, including the long handgrip
+B. the repeated wheel pattern would coincide but the long handgrip would move to a different sector
+C. only the short hub extension would move while the wheel stayed fixed
+D. the circular opening would disappear while all exterior features stayed fixed
+E. the wheel repeats but the central hub does not
+F. the wheel has no repeated spoke transformation</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>B.</strong> the repeated wheel pattern would coincide but the long handgrip would move to a different sector</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>B. the repeated wheel pattern would coincide but the long handgrip would move to a different sector</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q08_view01.png" data-caption="Q8 view 1"><img src="images/q08_view01.png" alt="Q8, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q08_view02.png" data-caption="Q8 view 2"><img src="images/q08_view02.png" alt="Q8, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q08_view03.png" data-caption="Q8 view 3"><img src="images/q08_view03.png" alt="Q8, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q08_view04.png" data-caption="Q8 view 4"><img src="images/q08_view04.png" alt="Q8, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q09">
+      <div class="qa-heading"><h2>Q9: handwheel_000480_s4420_v9_front_back_swap</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>C</strong></span><span>VLM: <strong>C</strong></span></div>
+      <p><strong>Question focus:</strong> which appendages exchange near/far sides under a flip</p>
+      <p><strong>Decisive feature:</strong> opposite placement of handgrip and hub extension</p>
+      <p><strong>Occlusion intent:</strong> use opposing oblique views without exposing either appendage end-on</p>
+      <details open><summary>Question and choices</summary><pre class="question">If the solid were flipped so the front and back of the wheel traded places, which pair of appendages would exchange near and far sides? Choose one:
+A. two neighboring spokes and the outer rim
+B. the central opening and the outer rim
+C. the long handgrip and the short hub extension
+D. no features would exchange sides because the part is fully symmetric
+E. the handgrip would exchange sides with a neighboring spoke
+F. only the outer rim would exchange sides, both appendages would stay put</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>C.</strong> the long handgrip and the short hub extension</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>C. the long handgrip and the short hub extension</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q09_view01.png" data-caption="Q9 view 1"><img src="images/q09_view01.png" alt="Q9, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q09_view02.png" data-caption="Q9 view 2"><img src="images/q09_view02.png" alt="Q9, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q09_view03.png" data-caption="Q9 view 3"><img src="images/q09_view03.png" alt="Q9, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q09_view04.png" data-caption="Q9 view 4"><img src="images/q09_view04.png" alt="Q9, reference view 4" loading="lazy"></a></div>
+    </article><article class="qa-card" id="q10">
+      <div class="qa-heading"><h2>Q10: handwheel_000480_s4420_v9_shared_depth_direction</h2><span class="status correct">CORRECT</span></div>
+      <div class="badges"><span>Difficulty 4</span><span>Ground truth: <strong>D</strong></span><span>VLM: <strong>D</strong></span></div>
+      <p><strong>Question focus:</strong> shared front-to-back direction versus centered/offset placement</p>
+      <p><strong>Decisive feature:</strong> central opening and partially hidden handgrip</p>
+      <p><strong>Occlusion intent:</strong> use signed-Y edge families so both direction witnesses are weak but nonzero</p>
+      <details open><summary>Question and choices</summary><pre class="question">Which comparison between the long handgrip and the circular opening stays consistent across all four oblique views? Choose one:
+A. both are centered on the same line through the wheel
+B. the opening extends front-to-back while the handgrip lies entirely in the wheel face
+C. the handgrip and opening extend in perpendicular directions
+D. both extend in the same front-to-back direction, but only the opening is centered and the handgrip is offset toward the rim
+E. the opening and handgrip are perpendicular, but both are centered
+F. the opening is offset toward the rim while the handgrip is centered</pre></details>
+      <div class="answers"><div class="answer-box ground-truth"><h3>Ground truth</h3><p><strong>D.</strong> both extend in the same front-to-back direction, but only the opening is centered and the handgrip is offset toward the rim</p></div>
+      <div class="answer-box vlm-answer"><h3>Luna Max answer</h3><p>D. both extend in the same front-to-back direction, but only the opening is centered and the handgrip is offset toward the rim</p></div></div>
+      <div class="images-grid">        <a class="image-link" href="images/q10_view01.png" data-caption="Q10 view 1"><img src="images/q10_view01.png" alt="Q10, reference view 1" loading="lazy"></a>
+        <a class="image-link" href="images/q10_view02.png" data-caption="Q10 view 2"><img src="images/q10_view02.png" alt="Q10, reference view 2" loading="lazy"></a>
+        <a class="image-link" href="images/q10_view03.png" data-caption="Q10 view 3"><img src="images/q10_view03.png" alt="Q10, reference view 3" loading="lazy"></a>
+        <a class="image-link" href="images/q10_view04.png" data-caption="Q10 view 4"><img src="images/q10_view04.png" alt="Q10, reference view 4" loading="lazy"></a></div>
+    </article></main>
+<footer>Generated from the validated V9 A–F package. Supporting CSV, metadata, and Luna Max evaluation artifacts are in the <code>source/</code> folder. Click any image to enlarge it.</footer>
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged reference image"><button type="button" aria-label="Close">×</button><img alt=""></div>
+<script>const box=document.getElementById("lightbox"), enlarged=box.querySelector("img"), close=()=>{box.classList.remove("open");enlarged.src="";}; document.querySelectorAll(".image-link").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();enlarged.src=link.href;enlarged.alt=link.dataset.caption||"Reference image";box.classList.add("open");})); box.addEventListener("click",event=>{if(event.target===box||event.target===box.querySelector("button"))close();}); document.addEventListener("keydown",event=>{if(event.key==="Escape")close();});</script>
+</body></html>
