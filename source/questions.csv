@@ -1,0 +1,71 @@
+qa_id,qa_set,image_only_eligible,release_eligible,question,answer,answer_type,difficulty,reference_images,reference_view_metadata
+handwheel_000480_s4420_v3_axis_component_bundle,proposed_image_only,true,true,"Using the complementary oblique and end-biased views, which global axis and rim-plane interpretation accounts for the handgrip and hub extension’s signed placement? Choose one:
+A. the wheel axle is X, the rim lies in YZ, the handgrip is on +Y and +X, and the short hub extension is on -X
+B. the wheel axle is X, the rim lies in YZ, the handgrip is on +Y and -X, and the short hub extension is on +X
+C. the wheel axle is Y, the rim lies in XZ, the handgrip is on +X and +Y, and the short hub extension is on -Y
+D. the wheel axle is Z, the rim lies in XY, the handgrip is on +X and +Y, and the short hub extension is on -Z
+E. the wheel axle is Z, the rim lies in XY, the handgrip is on +X and +Y, and the short hub extension is on +Z
+F. the wheel axle is Y, the rim lies in XZ, the handgrip is on -X and +Y, and the short hub extension is on -Y","A. the wheel axle is X, the rim lies in YZ, the handgrip is on +Y and +X, and the short hub extension is on -X",categorical,4,references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_01.png;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_02.png;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_03.png;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_04.png,references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_01.json;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_02.json;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_03.json;references/01_handwheel_000480_s4420_v3_axis_component_bundle/view_04.json
+handwheel_000480_s4420_v3_symmetry_restoration,proposed_image_only,true,true,"If one component were removed, which removal would make the remaining wheel-and-hub geometry repeat under rotation about global X? Choose one:
+A. the central circular opening
+B. the long handgrip
+C. the short hub extension
+D. the continuous outer rim
+E. the wheel's repeated spoke pattern itself
+F. no single component removal can bring back the five-spoke rotational repeat",B. the long handgrip,categorical,4,references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_01.png;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_02.png;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_03.png;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_04.png,references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_01.json;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_02.json;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_03.json;references/02_handwheel_000480_s4420_v3_symmetry_restoration/view_04.json
+handwheel_000480_s4420_v3_coaxial_offset_profile,proposed_image_only,true,true,"Using views with different axial and radial emphasis, how should the axis relationship between the handgrip and hub extension be described? Choose one:
+A. both the long handgrip and the short hub extension share the central X axis
+B. the handgrip shares the central X axis while the hub extension is radially offset
+C. the short hub extension shares the central X axis while the handgrip is parallel to X but radially offset
+D. the handgrip and hub extension are parallel to Y and both are radially offset
+E. both appendages are parallel to X and both are radially offset from the central axis
+F. the handgrip is perpendicular to X while the hub extension is coaxial with X",C. the short hub extension shares the central X axis while the handgrip is parallel to X but radially offset,categorical,4,references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_01.png;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_02.png;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_03.png;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_04.png,references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_01.json;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_02.json;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_03.json;references/03_handwheel_000480_s4420_v3_coaxial_offset_profile/view_04.json
+handwheel_000480_s4420_v3_spoke_grip_registration,proposed_image_only,true,true,"By comparing the rim-plane and oblique views, where is the handgrip registered relative to the repeated spoke and outer rim pattern? Choose one:
+A. midway between two neighboring spokes
+B. at the center of an open sector away from the rim
+C. at the outer rim with no radial spoke aligned beneath it
+D. at the outer rim along the continuation of one spoke
+E. at the outer rim aligned with two neighboring spokes at once
+F. at the central hub with no radial alignment to the rim",D. at the outer rim along the continuation of one spoke,categorical,4,references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_01.png;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_02.png;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_03.png;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_04.png,references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_01.json;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_02.json;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_03.json;references/04_handwheel_000480_s4420_v3_spoke_grip_registration/view_04.json
+handwheel_000480_s4420_v3_bounded_sector_topology,proposed_image_only,true,true,"Using two oblique views, what topology best describes the sectors, rim, and radial bars? Choose one:
+A. five open sectors enclosed by one continuous rim with flat radial bars
+B. five open sectors bounded by disconnected rim arcs with round radial rods
+C. four open sectors enclosed by one continuous rim with flat radial bars
+D. one solid disk with no open sectors and no radial bars
+E. six open sectors enclosed by one continuous rim with flat radial bars
+F. five open sectors with triangular radial plates and no continuous rim",A. five open sectors enclosed by one continuous rim with flat radial bars,categorical,4,references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_01.png;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_02.png;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_03.png;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_04.png,references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_01.json;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_02.json;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_03.json;references/05_handwheel_000480_s4420_v3_bounded_sector_topology/view_04.json
+handwheel_000480_s4420_v3_through_opening_axial_visibility,proposed_image_only,true,true,"Comparing views biased toward the +X and -X ends, what does the central X-aligned opening reveal about its axial continuity? Choose one:
+A. it is a blind recess visible only from the +X side
+B. it is one continuous opening visible from both signed X sides
+C. it is a blind recess visible only from the -X side
+D. it is two unrelated circular recesses that do not meet
+E. it is an opening whose two ends are disconnected from one another
+F. there is no central circular opening",B. it is one continuous opening visible from both signed X sides,categorical,4,references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_01.png;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_02.png;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_03.png;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_04.png,references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_01.json;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_02.json;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_03.json;references/06_handwheel_000480_s4420_v3_through_opening_axial_visibility/view_04.json
+handwheel_000480_s4420_v3_negative_x_depth_chain,proposed_image_only,true,true,"Looking from the -X side and then the opposite side, what near-to-far sequence should be assigned along X to the short hub extension, wheel rim, and long handgrip? Choose one:
+A. long handgrip, wheel rim, short hub extension
+B. wheel rim, short hub extension, long handgrip
+C. short hub extension, wheel rim, long handgrip
+D. short hub extension, long handgrip, wheel rim
+E. wheel rim, long handgrip, short hub extension
+F. long handgrip, short hub extension, wheel rim","C. short hub extension, wheel rim, long handgrip",categorical,4,references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_01.png;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_02.png;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_03.png;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_04.png,references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_01.json;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_02.json;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_03.json;references/07_handwheel_000480_s4420_v3_negative_x_depth_chain/view_04.json
+handwheel_000480_s4420_v3_one_spoke_step_transform,proposed_image_only,true,true,"Under the smallest rotation about global X that aligns one spoke with its neighboring spoke, what happens to the complete part? Choose one:
+A. all features including the handgrip align with their original locations
+B. only the short hub extension moves while the wheel and handgrip stay fixed
+C. only the handgrip and hub extension align while the rim does not
+D. the wheel and central hub repeat but the handgrip moves to a sector with no handgrip
+E. the wheel repeats but the central hub does not
+F. the five-spoke pattern has no rotational repeat at all",D. the wheel and central hub repeat but the handgrip moves to a sector with no handgrip,categorical,4,references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_01.png;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_02.png;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_03.png;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_04.png,references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_01.json;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_02.json;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_03.json;references/08_handwheel_000480_s4420_v3_one_spoke_step_transform/view_04.json
+handwheel_000480_s4420_v3_yz_reflection_counterfactual,proposed_image_only,true,true,"If the assembly were reflected through the YZ rim plane, how would the +X and -X placements of the handgrip and hub extension change? Choose one:
+A. the +X handgrip would lie on -X while the short hub extension would lie on +X
+B. the +Y handgrip would lie on -Y while both axial sides stayed unchanged
+C. the wheel axle would change from X to Y while the appendages stayed on their original sides
+D. the five radial bars would become four while the appendages stayed unchanged
+E. the +X handgrip would lie on +Y while the hub extension stayed on -X
+F. both appendages would remain on their original signed sides",A. the +X handgrip would lie on -X while the short hub extension would lie on +X,categorical,4,references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_01.png;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_02.png;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_03.png;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_04.png,references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_01.json;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_02.json;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_03.json;references/09_handwheel_000480_s4420_v3_yz_reflection_counterfactual/view_04.json
+handwheel_000480_s4420_v3_parallel_axis_correspondence,proposed_image_only,true,true,"Across a radial view and an oblique view, what correspondence should be inferred between the central opening axis and the handgrip axis, including whether each is centrally aligned? Choose one:
+A. the outer rim axis and a radial spoke direction are both Y
+B. the central opening axis and the long handgrip axis are both X, although only the central opening is on-axis
+C. the short hub extension axis is Y and the handgrip axis is Z
+D. the spoke plane and the handgrip direction are both Z
+E. the central opening axis is X while the handgrip axis is Y
+F. the central opening axis is Y while the handgrip axis is X","B. the central opening axis and the long handgrip axis are both X, although only the central opening is on-axis",categorical,4,references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_01.png;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_02.png;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_03.png;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_04.png,references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_01.json;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_02.json;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_03.json;references/10_handwheel_000480_s4420_v3_parallel_axis_correspondence/view_04.json

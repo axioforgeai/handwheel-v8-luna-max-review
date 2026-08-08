@@ -1,0 +1,202 @@
+{
+  "answer_choices": {
+    "handwheel_000480_s4420_v3_axis_component_bundle": [
+      "the wheel axle is X, the rim lies in YZ, the handgrip is on +Y and +X, and the short hub extension is on -X",
+      "the wheel axle is X, the rim lies in YZ, the handgrip is on +Y and -X, and the short hub extension is on +X",
+      "the wheel axle is Y, the rim lies in XZ, the handgrip is on +X and +Y, and the short hub extension is on -Y",
+      "the wheel axle is Z, the rim lies in XY, the handgrip is on +X and +Y, and the short hub extension is on -Z",
+      "the wheel axle is Z, the rim lies in XY, the handgrip is on +X and +Y, and the short hub extension is on +Z",
+      "the wheel axle is Y, the rim lies in XZ, the handgrip is on -X and +Y, and the short hub extension is on -Y"
+    ],
+    "handwheel_000480_s4420_v3_symmetry_restoration": [
+      "the central circular opening",
+      "the long handgrip",
+      "the short hub extension",
+      "the continuous outer rim",
+      "the wheel's repeated spoke pattern itself",
+      "no single component removal can bring back the five-spoke rotational repeat"
+    ],
+    "handwheel_000480_s4420_v3_coaxial_offset_profile": [
+      "both the long handgrip and the short hub extension share the central X axis",
+      "the handgrip shares the central X axis while the hub extension is radially offset",
+      "the short hub extension shares the central X axis while the handgrip is parallel to X but radially offset",
+      "the handgrip and hub extension are parallel to Y and both are radially offset",
+      "both appendages are parallel to X and both are radially offset from the central axis",
+      "the handgrip is perpendicular to X while the hub extension is coaxial with X"
+    ],
+    "handwheel_000480_s4420_v3_spoke_grip_registration": [
+      "midway between two neighboring spokes",
+      "at the center of an open sector away from the rim",
+      "at the outer rim with no radial spoke aligned beneath it",
+      "at the outer rim along the continuation of one spoke",
+      "at the outer rim aligned with two neighboring spokes at once",
+      "at the central hub with no radial alignment to the rim"
+    ],
+    "handwheel_000480_s4420_v3_bounded_sector_topology": [
+      "five open sectors enclosed by one continuous rim with flat radial bars",
+      "five open sectors bounded by disconnected rim arcs with round radial rods",
+      "four open sectors enclosed by one continuous rim with flat radial bars",
+      "one solid disk with no open sectors and no radial bars",
+      "six open sectors enclosed by one continuous rim with flat radial bars",
+      "five open sectors with triangular radial plates and no continuous rim"
+    ],
+    "handwheel_000480_s4420_v3_through_opening_axial_visibility": [
+      "it is a blind recess visible only from the +X side",
+      "it is one continuous opening visible from both signed X sides",
+      "it is a blind recess visible only from the -X side",
+      "it is two unrelated circular recesses that do not meet",
+      "it is an opening whose two ends are disconnected from one another",
+      "there is no central circular opening"
+    ],
+    "handwheel_000480_s4420_v3_negative_x_depth_chain": [
+      "long handgrip, wheel rim, short hub extension",
+      "wheel rim, short hub extension, long handgrip",
+      "short hub extension, wheel rim, long handgrip",
+      "short hub extension, long handgrip, wheel rim",
+      "wheel rim, long handgrip, short hub extension",
+      "long handgrip, short hub extension, wheel rim"
+    ],
+    "handwheel_000480_s4420_v3_one_spoke_step_transform": [
+      "all features including the handgrip align with their original locations",
+      "only the short hub extension moves while the wheel and handgrip stay fixed",
+      "only the handgrip and hub extension align while the rim does not",
+      "the wheel and central hub repeat but the handgrip moves to a sector with no handgrip",
+      "the wheel repeats but the central hub does not",
+      "the five-spoke pattern has no rotational repeat at all"
+    ],
+    "handwheel_000480_s4420_v3_yz_reflection_counterfactual": [
+      "the +X handgrip would lie on -X while the short hub extension would lie on +X",
+      "the +Y handgrip would lie on -Y while both axial sides stayed unchanged",
+      "the wheel axle would change from X to Y while the appendages stayed on their original sides",
+      "the five radial bars would become four while the appendages stayed unchanged",
+      "the +X handgrip would lie on +Y while the hub extension stayed on -X",
+      "both appendages would remain on their original signed sides"
+    ],
+    "handwheel_000480_s4420_v3_parallel_axis_correspondence": [
+      "the outer rim axis and a radial spoke direction are both Y",
+      "the central opening axis and the long handgrip axis are both X, although only the central opening is on-axis",
+      "the short hub extension axis is Y and the handgrip axis is Z",
+      "the spoke plane and the handgrip direction are both Z",
+      "the central opening axis is X while the handgrip axis is Y",
+      "the central opening axis is Y while the handgrip axis is X"
+    ]
+  },
+  "answer_position_distribution": {
+    "A": 3,
+    "B": 3,
+    "C": 2,
+    "D": 2
+  },
+  "authoring_origin": {
+    "handwheel_000480_s4420_v3_axis_component_bundle": "luna_max",
+    "handwheel_000480_s4420_v3_bounded_sector_topology": "luna_max",
+    "handwheel_000480_s4420_v3_coaxial_offset_profile": "luna_max",
+    "handwheel_000480_s4420_v3_negative_x_depth_chain": "luna_max",
+    "handwheel_000480_s4420_v3_one_spoke_step_transform": "deterministic_fallback",
+    "handwheel_000480_s4420_v3_parallel_axis_correspondence": "luna_max",
+    "handwheel_000480_s4420_v3_spoke_grip_registration": "luna_max",
+    "handwheel_000480_s4420_v3_symmetry_restoration": "luna_max",
+    "handwheel_000480_s4420_v3_through_opening_axial_visibility": "luna_max",
+    "handwheel_000480_s4420_v3_yz_reflection_counterfactual": "luna_max"
+  },
+  "correct_choice_positions_one_based": {
+    "handwheel_000480_s4420_v3_axis_component_bundle": 1,
+    "handwheel_000480_s4420_v3_bounded_sector_topology": 1,
+    "handwheel_000480_s4420_v3_coaxial_offset_profile": 3,
+    "handwheel_000480_s4420_v3_negative_x_depth_chain": 3,
+    "handwheel_000480_s4420_v3_one_spoke_step_transform": 4,
+    "handwheel_000480_s4420_v3_parallel_axis_correspondence": 2,
+    "handwheel_000480_s4420_v3_spoke_grip_registration": 4,
+    "handwheel_000480_s4420_v3_symmetry_restoration": 2,
+    "handwheel_000480_s4420_v3_through_opening_axial_visibility": 2,
+    "handwheel_000480_s4420_v3_yz_reflection_counterfactual": 1
+  },
+  "difficulty_bands": {
+    "handwheel_000480_s4420_v3_axis_component_bundle": "V4",
+    "handwheel_000480_s4420_v3_bounded_sector_topology": "V4",
+    "handwheel_000480_s4420_v3_coaxial_offset_profile": "V4",
+    "handwheel_000480_s4420_v3_negative_x_depth_chain": "V4",
+    "handwheel_000480_s4420_v3_one_spoke_step_transform": "V4",
+    "handwheel_000480_s4420_v3_parallel_axis_correspondence": "V4",
+    "handwheel_000480_s4420_v3_spoke_grip_registration": "V4",
+    "handwheel_000480_s4420_v3_symmetry_restoration": "V4",
+    "handwheel_000480_s4420_v3_through_opening_axial_visibility": "V4",
+    "handwheel_000480_s4420_v3_yz_reflection_counterfactual": "V4"
+  },
+  "human_answerability": "Not guaranteed; this package intentionally tests failure when the decisive feature is hidden.",
+  "key_features": {
+    "axis_component_bundle": {
+      "decisive_feature": "long +Y/+X handgrip",
+      "occlusion_intent": "hide the handgrip in all four views; avoid the near-Y side pose",
+      "question_focus": "signed handgrip and hub-extension placement"
+    },
+    "bounded_sector_topology": {
+      "decisive_feature": "face-on sector openings and radial-bar boundaries",
+      "occlusion_intent": "use signed-Y edge/elevated views so sector boundaries collapse",
+      "question_focus": "number and enclosure of open sectors, rim, and radial bars"
+    },
+    "coaxial_offset_profile": {
+      "decisive_feature": "the two axial appendages, especially the handgrip",
+      "occlusion_intent": "hide both appendages in all four views; avoid a full side-cylinder view",
+      "question_focus": "axis relationship of handgrip and hub extension"
+    },
+    "negative_x_depth_chain": {
+      "decisive_feature": "the handgrip/hub depth silhouettes",
+      "occlusion_intent": "hide both appendage silhouettes behind the rim in all four views",
+      "question_focus": "near-to-far axial ordering of appendages and rim"
+    },
+    "one_spoke_step_transform": {
+      "decisive_feature": "handgrip location relative to the repeated wheel",
+      "occlusion_intent": "hide the handgrip in all four views",
+      "question_focus": "handgrip breaking the wheel's five-spoke repeat"
+    },
+    "parallel_axis_correspondence": {
+      "decisive_feature": "central opening and long handgrip",
+      "occlusion_intent": "use signed-Y edge views to minimize both axis witnesses",
+      "question_focus": "central opening axis versus handgrip axis"
+    },
+    "spoke_grip_registration": {
+      "decisive_feature": "handgrip/rim contact region",
+      "occlusion_intent": "hide the handgrip at the far rim in all four views",
+      "question_focus": "handgrip registration relative to spokes and rim"
+    },
+    "symmetry_restoration": {
+      "decisive_feature": "long handgrip",
+      "occlusion_intent": "hide the handgrip in all four views; avoid the near-Y side pose",
+      "question_focus": "component whose removal restores X-axis rotational repeat"
+    },
+    "through_opening_axial_visibility": {
+      "decisive_feature": "central circular opening",
+      "occlusion_intent": "use edge-biased signed-Y views to minimize the opening witness",
+      "question_focus": "continuity of the central X-aligned opening"
+    },
+    "yz_reflection_counterfactual": {
+      "decisive_feature": "relative +X handgrip and -X hub extension",
+      "occlusion_intent": "hide both signed appendages in all four views",
+      "question_focus": "signed X-side placement under YZ reflection"
+    }
+  },
+  "model_stem": "handwheel_000480_s4420",
+  "occlusion_protocol": "Strict adversarial occlusion: the decisive feature is maximally hidden in all four question-owned views.",
+  "package": "vqa_v8_af",
+  "profile": "handwheel_visual_spatial_v8_af_distinct_target_occlusion",
+  "question_count": 10,
+  "schema_version": "1.0.0",
+  "scope": "Final-B-Rep-derived categorical labels and image-only visual/spatial reasoning. No code, measurements, dimensions, or modeling history are released to an evaluator.",
+  "status": "candidate_pending_human_fairness_review",
+  "question_variant": "same V4 stems and ground-truth answers, six labeled choices A-F",
+  "ground_truth_answer_format": "A-F label followed by exact answer text",
+  "correct_choice_labels": {
+    "handwheel_000480_s4420_v3_axis_component_bundle": "A",
+    "handwheel_000480_s4420_v3_symmetry_restoration": "B",
+    "handwheel_000480_s4420_v3_coaxial_offset_profile": "C",
+    "handwheel_000480_s4420_v3_spoke_grip_registration": "D",
+    "handwheel_000480_s4420_v3_bounded_sector_topology": "A",
+    "handwheel_000480_s4420_v3_through_opening_axial_visibility": "B",
+    "handwheel_000480_s4420_v3_negative_x_depth_chain": "C",
+    "handwheel_000480_s4420_v3_one_spoke_step_transform": "D",
+    "handwheel_000480_s4420_v3_yz_reflection_counterfactual": "A",
+    "handwheel_000480_s4420_v3_parallel_axis_correspondence": "B"
+  },
+  "choice_count": 6
+}
